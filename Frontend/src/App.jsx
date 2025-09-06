@@ -7,11 +7,13 @@ import Footer from './components/Footer'
 import Register from './components/Register'// Capitalized
 import {BrowserRouter, Routes , Route} from "react-router-dom"
 import Login from './components/Login'
+import Authprovider from './Authprovider'
 
 
 function App() {
   return (
     <>
+    <Authprovider >
       <BrowserRouter>
       <Header/>
         <Routes>
@@ -21,6 +23,7 @@ function App() {
         </Routes>
       <Footer/>
       </BrowserRouter>
+    </Authprovider>
           
       
     </>
